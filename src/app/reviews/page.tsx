@@ -175,13 +175,13 @@ const featuredTestimonials = [
     name: "Akshay Shinde",
     location: "Pasadena, CA",
     image: "AS",
-    text: "Jesse helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend Jesse and his team! A+ Service!!!"
+    text: "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend OLA and his team! A+ Service!!!"
   },
   {
     name: "Jessica Ruiz",
     location: "Whittier, CA",
     image: "JR",
-    text: "I can't express how thankful and grateful we are for Jesse. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr Jesse come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
+    text: "I can't express how thankful and grateful we are for OLA. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr OLA come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
   }
 ];
 
@@ -190,19 +190,19 @@ const googleReviews = [
     name: "Marisol Rivera",
     initial: "MR",
     rating: 5,
-    text: "Shout out to our Home Buying DREAM TEAM Vanessa & Jesse!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
+    text: "Shout out to our Home Buying DREAM TEAM Vanessa & OLA!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
   },
   {
     name: "jose malvaez",
     initial: "JM",
     rating: 5,
-    text: "Jesse introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
+    text: "OLA introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
   },
   {
     name: "Nuria Marroquin",
     initial: "NM",
     rating: 5,
-    text: "Jesse was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
+    text: "OLA was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
   },
   {
     name: "Tiffany Huazo",
@@ -214,25 +214,25 @@ const googleReviews = [
     name: "akshay shinde",
     initial: "AS",
     rating: 5,
-    text: "Jesse helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
+    text: "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
   },
   {
     name: "Jessica Ruiz",
     initial: "JR",
     rating: 5,
-    text: "I can't express how thankful and grateful we are for Jesse He always made himself available and was very patient with all our questions.He is someone ..."
+    text: "I can't express how thankful and grateful we are for OLA He always made himself available and was very patient with all our questions.He is someone ..."
   },
   {
     name: "K'kai Sanabria",
     initial: "KS",
     rating: 5,
-    text: "By far the best decision me and my fiancé made, was to chose Jesse as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
+    text: "By far the best decision me and my fiancé made, was to chose OLA as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
   },
   {
     name: "Faith T",
     initial: "FT",
     rating: 5,
-    text: "Jesse was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
+    text: "OLA was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
   }
 ];
 
