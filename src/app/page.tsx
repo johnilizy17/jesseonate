@@ -138,7 +138,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-white font-bold mb-1">Jesse Oñate</p>
+                <p className="text-white font-bold mb-1">OLA</p>
                 <p className="text-gray-300 text-sm mb-2">
                   On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
                 </p>
@@ -162,7 +162,7 @@ export default function HomePage() {
 
                 {/* Banner */}
                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-400 px-12 py-3 text-center" style={{ clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)' }}>
-                  <p className="font-bold text-2xl text-gray-800 tracking-wider">JESSE OÑATE</p>
+                  <p className="font-bold text-2xl text-gray-800 tracking-wider">OLA</p>
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function HomePage() {
           {/* Right Side - Text */}
           <div className="p-12 md:p-16 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              Hi! I'm Realtor,<br />Jesse Oñate.
+              Hi! I'm Realtor,<br />OLA.
             </h2>
             <p className="text-lg leading-relaxed mb-6">
               As a homeowner, I remember how overwhelming the home-buying process felt...like tackling a lego puzzle without instructions. 
@@ -232,7 +232,7 @@ export default function HomePage() {
           {/* CTA Button */}
           <div className="text-center">
             <a href="/schedule" className="inline-block bg-green-500 text-white px-12 py-4 rounded font-bold hover:bg-green-600 transition">
-              TALK TO JESSE - NO PRESSURE
+              TALK TO OLA - NO PRESSURE
             </a>
           </div>
         </div>

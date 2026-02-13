@@ -29,7 +29,7 @@ export default function ScheduleCalendar({
     "04:00 PM", "04:15 PM", "04:30 PM", "04:45 PM"
   ],
   onBookingComplete,
-  eventTitle = "Discovery Call with Jesse Oñate",
+  eventTitle = "Discovery Call with OLA",
   eventLocation = "Phone Call"
 }: ScheduleCalendarProps) {
   const [selectedDate, setSelectedDate] = useState<number | null>(null);

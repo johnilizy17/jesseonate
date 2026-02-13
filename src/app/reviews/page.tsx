@@ -145,7 +145,7 @@ export default function ReviewsPage() {
           <div className="bg-white border-4 border-purple-600 rounded-2xl p-12 text-center">
             <p className="text-purple-600 font-semibold mb-4 text-sm tracking-wider">READY TO TAKE THE NEXT STEP?</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Chat with Jesse - No Pressure,<br />No BS, Real Advice
+              Chat with OLA - No Pressure,<br />No BS, Real Advice
             </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Whether you're buying a home or selling your property for top dollar, the journey starts with a conversation. 

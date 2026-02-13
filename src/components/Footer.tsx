@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Brand Section */}
         <div>
           <h3 className="text-2xl font-bold mb-4">
-            <span className="text-green-500">JESSE</span> <span className="text-white">OÑATE.</span>
+            <span className="text-green-500">OLA</span>
           </h3>
           <p className="text-gray-400 mb-6">
             On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-800 text-center">
-        <p className="text-gray-400 text-sm">Copyright 2026. Jesse Oñate. All Rights Reserved.</p>
+        <p className="text-gray-400 text-sm">Copyright 2026. OLA. All Rights Reserved.</p>
         <p className="text-gray-600 text-xs mt-2">Powered by JHM</p>
       </div>
     </footer>
