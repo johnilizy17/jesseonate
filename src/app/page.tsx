@@ -1,11 +1,13 @@
 "use client";
 
+import ScheduleCalendar from "@/components/ScheduleCalendar";
 import { useEffect, useRef, useState } from "react";
 
 // Custom hook for scroll animations
 function useScrollAnimation() {
   const ref = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,15 +40,18 @@ export default function HomePage() {
   const testimonialsAnim = useScrollAnimation();
   const reviewsAnim = useScrollAnimation();
   const detailsAnim = useScrollAnimation();
+  const handleBookingComplete = (bookingData: any) => {
+    console.log('Booking completed:', bookingData);
+    // You can add additional logic here like sending to an API
+  };
 
   return (
     <div>
       {/* Hero Section */}
-      <section 
+      <section
         ref={heroAnim.ref as React.RefObject<HTMLElement>}
-        className={`bg-black text-white py-16 px-4 transition-all duration-1000 ${
-          heroAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`bg-black text-white py-16 px-4 transition-all duration-1000 ${heroAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -85,11 +90,10 @@ export default function HomePage() {
       </section>
 
       {/* Portfolio Grid */}
-      <section 
+      <section
         ref={portfolioAnim.ref as React.RefObject<HTMLElement>}
-        className={`relative overflow-hidden py-8 transition-all duration-1000 delay-200 ${
-          portfolioAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`relative overflow-hidden py-8 transition-all duration-1000 delay-200 ${portfolioAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         {/* First Row - Scrolls Left */}
         <div className="flex animate-scroll-left mb-0">
@@ -97,7 +101,7 @@ export default function HomePage() {
             <PropertyCard key={`row1-${i}`} {...property} />
           ))}
         </div>
-        
+
         {/* Second Row - Scrolls Right */}
         <div className="flex animate-scroll-right">
           {[...properties.slice(6), ...properties.slice(6)].map((property, i) => (
@@ -107,11 +111,10 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section 
+      <section
         ref={aboutAnim.ref as React.RefObject<HTMLElement>}
-        className={`bg-purple-600 text-white transition-all duration-1000 ${
-          aboutAnim.isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-        }`}
+        className={`bg-purple-600 text-white transition-all duration-1000 ${aboutAnim.isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          }`}
       >
         <div className="grid md:grid-cols-2">
           {/* Left Side - Image */}
@@ -122,7 +125,7 @@ export default function HomePage() {
                 <div key={i} className="bg-gray-400"></div>
               ))}
             </div>
-            
+
             {/* Main content */}
             <div className="relative z-10 flex flex-col items-center">
               {/* Instagram Card */}
@@ -153,7 +156,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-full h-full border-8 border-gray-400 rounded-full opacity-30"></div>
                   </div>
-                  
+
                   {/* Photo */}
                   <div className="absolute inset-8 rounded-full bg-gray-600 overflow-hidden flex items-center justify-center">
                     <span className="text-gray-400">Jesse Photo</span>
@@ -174,13 +177,13 @@ export default function HomePage() {
               Hi! I'm Realtor,<br />OLA.
             </h2>
             <p className="text-lg leading-relaxed mb-6">
-              As a homeowner, I remember how overwhelming the home-buying process felt...like tackling a lego puzzle without instructions. 
-              That experience inspired me to help others navigate buying and selling with confidence and ease. Everyone deserves a trusted 
+              As a homeowner, I remember how overwhelming the home-buying process felt...like tackling a lego puzzle without instructions.
+              That experience inspired me to help others navigate buying and selling with confidence and ease. Everyone deserves a trusted
               guide who truly understands the journey and can make it feel less daunting.
             </p>
             <p className="text-lg leading-relaxed mb-8">
-              After plenty of firsthand experience and research, I developed a <span className="underline decoration-2">streamlined</span> approach to simplify every step. 
-              From managing the details to decoding market trends, <span className="font-bold">I'm here to make your experience smooth, stress-free, and even enjoyable.</span> With the 
+              After plenty of firsthand experience and research, I developed a <span className="underline decoration-2">streamlined</span> approach to simplify every step.
+              From managing the details to decoding market trends, <span className="font-bold">I'm here to make your experience smooth, stress-free, and even enjoyable.</span> With the
               right mix of expertise, humor, and heart, my mission is to help you take that next big step with confidence.
             </p>
             <a href="/services" className="inline-block bg-yellow-400 text-black px-8 py-4 rounded font-bold hover:bg-yellow-500 transition text-center">
@@ -191,11 +194,10 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section 
+      <section
         ref={testimonialsAnim.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white transition-all duration-1000 ${
-          testimonialsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`py-16 px-4 bg-white transition-all duration-1000 ${testimonialsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         <div className="max-w-7xl mx-auto">
           <p className="text-green-500 text-center font-semibold mb-2">BUT FIRST...</p>
@@ -209,11 +211,10 @@ export default function HomePage() {
       </section>
 
       {/* Google Reviews Section */}
-      <section 
+      <section
         ref={reviewsAnim.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-gray-50 transition-all duration-1000 delay-200 ${
-          reviewsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`py-16 px-4 bg-gray-50 transition-all duration-1000 delay-200 ${reviewsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         <div className="max-w-7xl mx-auto">
           {/* Rating Header */}
@@ -239,11 +240,10 @@ export default function HomePage() {
       </section>
 
       {/* Wanna Know More Details Section */}
-      <section 
+      <section
         ref={detailsAnim.ref as React.RefObject<HTMLElement>}
-        className={`bg-black text-white py-16 px-4 transition-all duration-1000 ${
-          detailsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
+        className={`bg-black text-white py-16 px-4 transition-all duration-1000 ${detailsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
       >
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-3">
@@ -300,7 +300,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+     
       {/* Newsletter Section */}
       <section className="bg-black text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -308,14 +308,14 @@ export default function HomePage() {
             Join 5,000+ home-owners and home-buyers getting interest rate updates through 1 text a week
           </p>
           <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
-            <input 
-              type="text" 
-              placeholder="Enter Full Name..." 
+            <input
+              type="text"
+              placeholder="Enter Full Name..."
               className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500"
             />
-            <input 
-              type="tel" 
-              placeholder="Enter Mobile Number..." 
+            <input
+              type="tel"
+              placeholder="Enter Mobile Number..."
               className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500"
             />
           </div>
@@ -324,6 +324,19 @@ export default function HomePage() {
           </button>
         </div>
       </section>
+       <ScheduleCalendar
+        title="Discovery: Let's Get To Know Each Other"
+        description="Think of this step as our 'first date'—but without the awkward silences. This is your no-strings-attached moment to learn how I can help you navigate the real estate world like a pro."
+        availableDates={[13, 14, 15, 16, 17]}
+        timeSlots={[
+          "02:45 PM", "03:15 PM", "03:30 PM", "03:45 PM",
+          "04:00 PM", "04:15 PM", "04:30 PM", "04:45 PM"
+        ]}
+        onBookingComplete={handleBookingComplete}
+        eventTitle="Discovery Call with OLA"
+        eventLocation="Phone Call"
+      />
+
     </div>
   );
 }
@@ -417,13 +430,12 @@ const properties = [
 
 function GoogleReviewCard({ name, initial, rating, text, index }: { name: string; initial: string; rating: number; text: string; index?: number }) {
   const cardAnim = useScrollAnimation();
-  
+
   return (
-    <div 
+    <div
       ref={cardAnim.ref as React.RefObject<HTMLDivElement>}
-      className={`bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-700 ${
-        cardAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
+      className={`bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-700 ${cardAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
       style={{ transitionDelay: `${(index || 0) * 100}ms` }}
     >
       {/* Rating */}
@@ -431,13 +443,13 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
         <span className="text-2xl font-bold text-yellow-500">{rating}</span>
         <div className="text-yellow-400">★★★★★</div>
       </div>
-      
+
       {/* Review Text */}
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">
         {text}
       </p>
       <a href="#" className="text-blue-600 text-sm font-semibold">More</a>
-      
+
       {/* Reviewer Info */}
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
         <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-semibold text-sm">
@@ -464,13 +476,12 @@ function PropertyCard({ city, type }: { city: string; type: string }) {
 
 function TestimonialCard({ name, location, title, text, index }: { name: string; location: string; title: string; text: string; index?: number }) {
   const cardAnim = useScrollAnimation();
-  
+
   return (
-    <div 
+    <div
       ref={cardAnim.ref as React.RefObject<HTMLDivElement>}
-      className={`bg-white p-6 rounded-lg border-4 border-purple-600 shadow-lg transition-all duration-700 ${
-        cardAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
+      className={`bg-white p-6 rounded-lg border-4 border-purple-600 shadow-lg transition-all duration-700 ${cardAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
       style={{ transitionDelay: `${(index || 0) * 150}ms` }}
     >
       <div className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4"></div>
