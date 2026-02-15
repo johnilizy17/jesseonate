@@ -39,11 +39,11 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold mb-4">USEFUL LINKS</h3>
           <ul className="space-y-2">
-            <li><a href="/checklist" className="text-gray-400 hover:text-white transition">BUYER CHECKLIST</a></li>
-            <li><a href="/equity" className="text-gray-400 hover:text-white transition">EQUITY REPORT</a></li>
-            <li><a href="/app" className="text-gray-400 hover:text-white transition">HOME SHOP APP</a></li>
-            <li><a href="/seller" className="text-gray-400 hover:text-white transition">HOME SELLER</a></li>
-            <li><a href="/buyer" className="text-gray-400 hover:text-white transition">HOME BUYER</a></li>
+            <li><a href="tel:+16475295663" className="text-gray-400 hover:text-white transition">BUYER CHECKLIST</a></li>
+            <li><a href="tel:+16475295663" className="text-gray-400 hover:text-white transition">EQUITY REPORT</a></li>
+            <li><a href="tel:+16475295663" className="text-gray-400 hover:text-white transition">HOME SHOP APP</a></li>
+            <li><a href="tel:+16475295663" className="text-gray-400 hover:text-white transition">HOME SELLER</a></li>
+            <li><a href="tel:+16475295663" className="text-gray-400 hover:text-white transition">HOME BUYER</a></li>
           </ul>
         </div>
 
@@ -62,9 +62,9 @@ export default function Footer() {
             placeholder="Enter Mobile Number..." 
             className="w-full px-4 py-2 mb-4 rounded bg-transparent border border-gray-600 text-white text-sm"
           />
-          <button className="w-full bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition">
+          <a href="tel:+16475295663" className="block w-full bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition text-center">
             KEEP ME UPDATED
-          </button>
+          </a>
         </div>
       </div>
 

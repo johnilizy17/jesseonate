@@ -69,18 +69,18 @@ export default function HomePage() {
               <div className="flex -space-x-2">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full bg-gray-600 border-2 border-black hover-scale transition-all duration-300 overflow-hidden relative" style={{ animationDelay: `${0.7 + i * 0.1}s` }}>
-                    <Image 
-                      src={`/${i}.png`} 
-                      alt={`Client ${i}`} 
+                    <Image
+                      src={`/${i}.png`}
+                      alt={`Client ${i}`}
                       fill
                       className="object-cover"
                     />
                   </div>
                 ))}
                 <div className="w-10 h-10 rounded-full bg-gray-600 border-2 border-black hover-scale transition-all duration-300 overflow-hidden relative" style={{ animationDelay: '1.0s' }}>
-                  <Image 
-                    src="/4.jpg" 
-                    alt="OLA" 
+                  <Image
+                    src="/4.jpg"
+                    alt="OLA"
                     fill
                     className="object-cover"
                   />
@@ -156,9 +156,9 @@ export default function HomePage() {
               <div className="bg-black rounded-2xl p-4 mb-8 w-80">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
-                    <Image 
-                      src="/user.jpg" 
-                      alt="OLA" 
+                    <Image
+                      src="/user.jpg"
+                      alt="OLA"
                       fill
                       className="object-cover"
                     />
@@ -235,72 +235,74 @@ export default function HomePage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-gray-900 text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto">
           {/* Title */}
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 animate-fade-in-scale">
-            <span className="border-b-4 border-cyan-400 pb-2">How It Works</span>
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-black inline-block relative">
+              How It Works
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-cyan-400"></span>
+            </h2>
+          </div>
 
           {/* Steps Grid */}
-          <div className="grid md:grid-cols-3 gap-12 md:gap-8">
-            {/* Step 1 */}
-            <div className="text-center group hover-lift transition-all duration-500 animate-fade-in-scale">
-              <div className="mb-6">
-                <div className="text-8xl md:text-9xl font-bold text-white/10 group-hover:text-white/20 transition-all duration-500">
-                  1
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Step 1 - Discovery */}
+            <div className="text-center">
+              {/* Large Number */}
+              <div className="text-[150px] md:text-[180px] font-black leading-none mb-4">
+                1
               </div>
+
+              {/* Title with Arrow */}
               <div className="flex items-center justify-center gap-2 mb-4">
                 <span className="text-green-400 text-2xl">▶</span>
                 <h3 className="text-2xl md:text-3xl font-bold">Discovery</h3>
               </div>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+
+              {/* Description */}
+              <p className="text-gray-400 text-base leading-relaxed">
                 Set up a phone call to get to know each other. No obligations, no signatures. Free info for you.
               </p>
             </div>
 
-            {/* Step 2 */}
-            <div className="text-center group hover-lift transition-all duration-500 animate-fade-in-scale" style={{ animationDelay: '0.2s' }}>
-              <div className="mb-6">
-                <div className="text-8xl md:text-9xl font-bold text-white/10 group-hover:text-white/20 transition-all duration-500">
-                  2
-                </div>
+            {/* Step 2 - Meet Up */}
+            <div className="text-center">
+              {/* Large Number */}
+              <div className="text-[150px] md:text-[180px] font-black leading-none mb-4">
+                2
               </div>
+
+              {/* Title with Arrow */}
               <div className="flex items-center justify-center gap-2 mb-4">
                 <span className="text-purple-400 text-2xl">▶</span>
                 <h3 className="text-2xl md:text-3xl font-bold">Meet Up</h3>
               </div>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+
+              {/* Description */}
+              <p className="text-gray-400 text-base leading-relaxed">
                 In person consultation to reveal numbers & strategize a plan for you and your family's next move.
               </p>
             </div>
 
-            {/* Step 3 */}
-            <div className="text-center group hover-lift transition-all duration-500 animate-fade-in-scale" style={{ animationDelay: '0.4s' }}>
-              <div className="mb-6">
-                <div className="text-8xl md:text-9xl font-bold text-white/10 group-hover:text-white/20 transition-all duration-500">
-                  3
-                </div>
+            {/* Step 3 - Start */}
+            <div className="text-center">
+              {/* Large Number */}
+              <div className="text-[150px] md:text-[180px] font-black leading-none mb-4">
+                3
               </div>
+
+              {/* Title with Arrow */}
               <div className="flex items-center justify-center gap-2 mb-4">
                 <span className="text-yellow-400 text-2xl">▶</span>
                 <h3 className="text-2xl md:text-3xl font-bold">Start</h3>
               </div>
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+
+              {/* Description */}
+              <p className="text-gray-400 text-base leading-relaxed">
                 Guidance through negotiations, inspections, and closing - ensuring a successful transaction.
               </p>
             </div>
-          </div>
-
-          {/* CTA Button */}
-          <div className="text-center mt-16 animate-bounce-in" style={{ animationDelay: '0.6s' }}>
-            <a 
-              href="tel:+16475295663" 
-              className="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-12 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-110"
-            >
-              Let's Get Started
-            </a>
           </div>
         </div>
       </section>
@@ -412,59 +414,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section
-        ref={ctaAnim.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 transition-all duration-1000 ${ctaAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-      >
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white border-4 border-purple-600 rounded-2xl p-12 text-center">
-            <p className="text-purple-600 font-semibold mb-4 text-sm tracking-wider">READY TO TAKE THE NEXT STEP?</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Chat with OLA - No Pressure,<br />No BS, Real Advice
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Whether you're buying a home or selling your property for top dollar, the journey starts with a conversation.
-              Click below to answer easy questions, and let's start planning together.
-            </p>
-            <a
-              href="tel:+16475295663"
-              className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-bold hover:bg-yellow-500 transition"
-            >
-              GRAB A SPOT TO CHAT
-            </a>
-          </div>
-        </div>
-      </section>
-      {/* Newsletter Section */}
-      <section className="bg-black text-white py-16 px-4 relative overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20 animate-gradient"></div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <p className="text-lg mb-6 animate-fade-in-scale">
-            Join 5,000+ home-owners and home-buyers getting interest rate updates through 1 text a week
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <input
-              type="text"
-              placeholder="Enter Full Name..."
-              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
-            />
-            <input
-              type="tel"
-              placeholder="Enter Mobile Number..."
-              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
-            />
-          </div>
-          <button className="mt-6 bg-yellow-400 text-black px-12 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-            KEEP ME UPDATED
-          </button>
-        </div>
-      </section>
-      {/* Contact Section - Call/Text CTA */}
       <section className="bg-gradient-to-br from-purple-600 to-blue-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-scale">
@@ -494,6 +443,60 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section
+        ref={ctaAnim.ref as React.RefObject<HTMLElement>}
+        className={`py-16 px-4 transition-all duration-1000 ${ctaAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+      >
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white border-4 border-purple-600 rounded-2xl p-12 text-center">
+            <p className="text-purple-600 font-semibold mb-4 text-sm tracking-wider">READY TO TAKE THE NEXT STEP?</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Chat with OLA - No Pressure,<br />No BS, Real Advice
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+              Whether you're buying a home or selling your property for top dollar, the journey starts with a conversation.
+              Click below to answer easy questions, and let's start planning together.
+            </p>
+            <a
+              href="tel:+16475295663"
+              className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-bold hover:bg-yellow-500 transition"
+            >
+              GRAB A SPOT TO CHAT
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Newsletter Section */}
+      {/* Contact Section - Call/Text CTA */}
+      <section className="bg-black text-white py-16 px-4 relative overflow-hidden">
+        {/* Animated background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20 animate-gradient"></div>
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <p className="text-lg mb-6 animate-fade-in-scale">
+            Join 5,000+ home-owners and home-buyers getting interest rate updates through 1 text a week
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <input
+              type="text"
+              placeholder="Enter Full Name..."
+              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
+            />
+            <input
+              type="tel"
+              placeholder="Enter Mobile Number..."
+              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
+            />
+          </div>
+          <a href="tel:+16475295663" className="mt-6 bg-yellow-400 text-black px-12 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in inline-block" style={{ animationDelay: '0.4s' }}>
+            KEEP ME UPDATED
+          </a>
+        </div>
+      </section>
+
 
     </div>
   );
@@ -624,9 +627,9 @@ function PropertyCard({ city, type, image }: { city: string; type: string; image
   return (
     <div className="relative h-48 w-64 bg-gray-700 overflow-hidden flex-shrink-0 group hover-lift transition-all duration-500">
       {/* Property Image */}
-      <Image 
-        src={image} 
-        alt={`${city} property`} 
+      <Image
+        src={image}
+        alt={`${city} property`}
         fill
         className="object-cover"
       />
