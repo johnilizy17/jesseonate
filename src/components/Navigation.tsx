@@ -11,14 +11,14 @@ export default function Navigation() {
     <nav className="bg-black sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="text-2xl font-bold">
-            <span className="text-green-500">OLA</span>
-          </Link>
+          <Link href="/" className="text-2xl font-bold" style={{color:"#fff"}}>
+            <span className="text-green-500">OLA</span> OTUBU REAL ESTATE.
+          </Link> 
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <a href="/schedule" className="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition">
-              TALK TO OLA
+            <a href="tel:+16475295663" className="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition">
+              CALL: (647) 529-5663
             </a>
           </div>
 
@@ -41,8 +41,8 @@ export default function Navigation() {
               <MobileNavLink href="/checklist" onClick={() => setIsOpen(false)}>Checklist</MobileNavLink>
               <MobileNavLink href="/buyerguide" onClick={() => setIsOpen(false)}>Buyer Guide</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsOpen(false)}>FAQ</MobileNavLink>
-              <a href="/schedule" className="bg-yellow-400 text-black px-6 py-2 rounded font-semibold text-center mt-2">
-                TALK TO OLA
+              <a href="tel:+16475295663" className="bg-yellow-400 text-black px-6 py-2 rounded font-semibold text-center mt-2">
+                CALL: (647) 529-5663
               </a>
             </div>
           </div>

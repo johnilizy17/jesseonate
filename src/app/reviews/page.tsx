@@ -152,7 +152,7 @@ export default function ReviewsPage() {
               Click below to answer easy questions, and let's start planning together.
             </p>
             <a 
-              href="/schedule" 
+              href="tel:+16475295663" 
               className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-bold hover:bg-yellow-500 transition"
             >
               GRAB A SPOT TO CHAT

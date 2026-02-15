@@ -102,7 +102,7 @@ export default function VideosPage() {
             Let's discuss your real estate goals and how I can help you achieve them
           </p>
           <a 
-            href="/schedule" 
+            href="tel:+16475295663" 
             className="inline-block bg-yellow-400 text-black px-12 py-4 rounded-lg font-bold hover:bg-yellow-500 transition"
           >
             SCHEDULE A CONSULTATION
