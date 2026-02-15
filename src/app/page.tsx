@@ -120,7 +120,7 @@ export default function HomePage() {
           }`}
       >
         {/* First Row - Scrolls Left */}
-        <div className="flex animate-scroll-left hover:pause mb-0">
+        <div className="flex animate-scroll-left hover:pause mb-0" style={{background:"#000"}}>
           {[...properties.slice(0, 6), ...properties.slice(0, 6)].map((property, i) => (
             <PropertyCard key={`row1-${i}`} {...property} />
           ))}
