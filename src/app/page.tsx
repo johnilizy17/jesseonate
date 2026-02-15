@@ -118,9 +118,10 @@ export default function HomePage() {
         ref={portfolioAnim.ref as React.RefObject<HTMLElement>}
         className={`relative overflow-hidden py-8 transition-all duration-1000 delay-200 ${portfolioAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
+        style={{ background: "#000" }}
       >
         {/* First Row - Scrolls Left */}
-        <div className="flex animate-scroll-left hover:pause mb-0" style={{background:"#000"}}>
+        <div className="flex animate-scroll-left hover:pause mb-0" >
           {[...properties.slice(0, 6), ...properties.slice(0, 6)].map((property, i) => (
             <PropertyCard key={`row1-${i}`} {...property} />
           ))}
@@ -332,7 +333,7 @@ export default function HomePage() {
       >
         <div className="max-w-7xl mx-auto">
           {/* Rating Header */}
-          <div className="text-center mb-12">
+          <div className="mb-12">
             <div className="text-7xl font-bold mb-2 animate-bounce-in">5.00</div>
             <div className="text-yellow-400 text-3xl animate-pulse">★★★★★</div>
           </div>
@@ -507,19 +508,22 @@ const featuredTestimonials = [
     name: "Vicky Zadian",
     location: "Los Angeles, CA",
     title: "Very Skilled Realtor",
-    text: "OLA sold my LA triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!"
+    text: "OLA sold my LA triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
+    image: "/person/1.jpg"
   },
   {
     name: "Catherine Sananbria",
     location: "Rancho Cucamonga, CA",
     title: "Stress Free with OLA",
-    text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Call him now!!"
+    text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Call him now!!",
+    image: "/person/2.jpg"
   },
   {
     name: "Akshay Shinde",
     location: "Pasadena, CA",
     title: "A+ Service",
-    text: "OLA made buying our first home so easy! He was attentive, and always available for us. He's your guy"
+    text: "OLA made buying our first home so easy! He was attentive, and always available for us. He's your guy",
+    image: "/person/3.jpg"
   }
 ];
 
@@ -609,7 +613,7 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">
         {text}
       </p>
-      <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors duration-300">More</a>
+      <a href="tel:+16475295663" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors duration-300">More</a>
 
       {/* Reviewer Info */}
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
@@ -648,7 +652,7 @@ function PropertyCard({ city, type, image }: { city: string; type: string; image
   );
 }
 
-function TestimonialCard({ name, location, title, text, index }: { name: string; location: string; title: string; text: string; index?: number }) {
+function TestimonialCard({ name, location, title, text, image, index }: { name: string; location: string; title: string; text: string; image: string; index?: number }) {
   const cardAnim = useScrollAnimation();
 
   return (
@@ -658,7 +662,14 @@ function TestimonialCard({ name, location, title, text, index }: { name: string;
         }`}
       style={{ transitionDelay: `${(index || 0) * 150}ms` }}
     >
-      <div className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4 hover-scale transition-all duration-300 group-hover:shadow-lg"></div>
+      <div className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4 hover-scale transition-all duration-300 group-hover:shadow-lg overflow-hidden relative">
+        <Image 
+          src={image} 
+          alt={name} 
+          fill
+          className="object-cover"
+        />
+      </div>
       <h3 className="text-xl font-bold text-center mb-2 group-hover:text-purple-600 transition-colors duration-300">"{title}"</h3>
       <p className="text-gray-700 text-center mb-4">{text}</p>
       <p className="text-center font-semibold">- {name}</p>

@@ -128,9 +128,9 @@ export default function ReviewsPage() {
 
           {/* Load More Button */}
           <div className="text-center">
-            <button className="bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
+            <a href="tel:+16475295663" className="inline-block bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
               Load More
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -278,7 +278,7 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
       </div>
       
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">{text}</p>
-      <a href="#" className="text-blue-600 text-sm font-semibold">More</a>
+      <a href="tel:+16475295663" className="text-blue-600 text-sm font-semibold">More</a>
       
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
         <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-semibold text-sm">
