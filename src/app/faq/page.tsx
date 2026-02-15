@@ -57,7 +57,7 @@ export default function FAQPage() {
         <div className="mt-12 bg-blue-600 text-white p-8 rounded-lg text-center">
           <h2 className="text-2xl font-bold mb-4">Still Have Questions?</h2>
           <p className="mb-6">I'm here to help! Reach out and I'll be happy to answer any questions you have about your real estate journey.</p>
-          <a href="mailto:contact@example.com" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <a href="tel:+16475295663" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
             Contact Me
           </a>
         </div>

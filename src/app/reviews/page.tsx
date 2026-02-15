@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 // Custom hook for scroll animations
 function useScrollAnimation() {
@@ -92,14 +93,14 @@ export default function ReviewsPage() {
         }`}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-              <div key={i} className="aspect-square bg-gray-300 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Client Photo {i}
-                </div>
-              </div>
-            ))}
+          <div className="relative w-full h-[600px] md:h-[800px] rounded-2xl overflow-hidden shadow-2xl">
+            <Image 
+              src="/review.png" 
+              alt="Client Photos Collage" 
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
