@@ -20,14 +20,14 @@ export default function Footer() {
                 <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg shadow-purple-500/50">
                   <Image 
                     src="/user.jpg" 
-                    alt="OLA" 
+                    alt="Ola" 
                     width={80}
                     height={80}
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-4xl font-black text-white">OLA</h3>
+                  <h3 className="text-4xl font-black text-white">Ola Otudu</h3>
                   <p className="text-cyan-400 font-semibold">Expert Realtor</p>
                 </div>
               </div>
