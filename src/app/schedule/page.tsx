@@ -20,8 +20,8 @@ export default function SchedulePage() {
             "04:00 PM", "04:15 PM", "04:30 PM", "04:45 PM"
           ]}
           onBookingComplete={handleBookingComplete}
-          eventTitle="Discovery Call with OLA"
-          eventLocation="Phone Call"
+          eventTitle="Discovery Text with OLA"
+          eventLocation="Text Message"
         />
       </div>
     </div>

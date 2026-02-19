@@ -29,8 +29,8 @@ export default function ScheduleCalendar({
     "04:00 PM", "04:15 PM", "04:30 PM", "04:45 PM"
   ],
   onBookingComplete,
-  eventTitle = "Discovery Call with OLA",
-  eventLocation = "Phone Call"
+  eventTitle = "Discovery Text with OLA",
+  eventLocation = "Text Message"
 }: ScheduleCalendarProps) {
   const [selectedDate, setSelectedDate] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);

@@ -57,13 +57,13 @@ export default function HomePage() {
           <div className="space-y-6">
             <p className="text-sm tracking-wider mb-4 animate-fade-in-scale">DID YOU KNOW...</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
-              You Can Move<br />In <span className="text-purple-600 inline-block hover-scale">Under</span> 45 Days
+              You Can Move<br />In <span className="text-purple-600 inline-block hover-scale">Under</span> 30 Days
             </h1>
             <p className="text-lg mb-8 animate-fade-in-scale" style={{ animationDelay: '0.2s' }}>
               Whether it's your first time moving or a seasoned seller, I can help you <span className="font-semibold">start</span>
             </p>
-            <a href="tel:+16475295663" className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              CALL/TEXT: (647) 529-5663
+            <a href="sms:+16475295663" className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in" style={{ animationDelay: '0.4s' }}>
+              TEXT: (647) 529-5663
             </a>
             <div className="flex items-center gap-4 mt-8 animate-fade-in-scale" style={{ animationDelay: '0.6s' }}>
               <div className="flex -space-x-2">
@@ -80,7 +80,7 @@ export default function HomePage() {
                 <div className="w-10 h-10 rounded-full bg-gray-600 border-2 border-black hover-scale transition-all duration-300 overflow-hidden relative" style={{ animationDelay: '1.0s' }}>
                   <Image
                     src="/4.jpg"
-                    alt="OLA"
+                    alt="Ola Otubu"
                     fill
                     className="object-cover"
                   />
@@ -94,7 +94,7 @@ export default function HomePage() {
           </div>
           <div className="relative animate-rotate-in" style={{ animationDelay: '0.3s' }}>
             <div className="absolute -top-4 -right-4 bg-white text-black px-6 py-3 rounded-full font-semibold border-4 border-purple-600 z-10 animate-float hover-glow">
-              30 Day Escrow 🎉
+              30 days Closing 🎉
             </div>
             <div className="bg-gray-700 rounded-lg h-96 overflow-hidden hover-lift transition-all duration-500 hover:bg-gray-600 relative group">
               {/* Shimmer effect on hover */}
@@ -103,7 +103,7 @@ export default function HomePage() {
               </div>
               <Image
                 src="/user.jpg"
-                alt="OLA - Real Estate Expert"
+                alt="Ola Otubu - Real Estate Expert"
                 fill
                 className="object-cover"
                 priority
@@ -159,13 +159,13 @@ export default function HomePage() {
                   <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
                     <Image
                       src="/user.jpg"
-                      alt="OLA"
+                      alt="Ola Otubu"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="flex-1">
-                    <p className="font-bold text-white">OLA</p>
+                    <p className="font-bold text-white">Ola Otubu</p>
                     <div className="flex gap-4 text-xs text-gray-400">
                       <span><strong className="text-white">421</strong> posts</span>
                       <span><strong className="text-white">15.4K</strong> followers</span>
@@ -173,11 +173,11 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-white font-bold mb-1">OLA</p>
+                <p className="text-white font-bold mb-1">Ola Otubu</p>
                 <p className="text-gray-300 text-sm mb-2">
                   On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
                 </p>
-                <p className="text-blue-400 text-sm">@OLAAllAccess</p>
+                <p className="text-blue-400 text-sm">@Ola OtubuAllAccess</p>
               </div>
 
               {/* Laurel Wreath Frame with Photo */}
@@ -197,7 +197,7 @@ export default function HomePage() {
                     <div className="relative w-full h-full">
                       <Image
                         src="/user.jpg"
-                        alt="OLA - Realtor"
+                        alt="Ola Otubu - Realtor"
                         fill
                         className="object-cover rounded-full"
                       />
@@ -207,7 +207,7 @@ export default function HomePage() {
 
                 {/* Banner */}
                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-400 px-12 py-3 text-center" style={{ clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)' }}>
-                  <p className="font-bold text-2xl text-gray-800 tracking-wider">OLA</p>
+                  <p className="font-bold text-2xl text-gray-800 tracking-wider">Ola Otubu</p>
                 </div>
               </div>
             </div>
@@ -216,7 +216,7 @@ export default function HomePage() {
           {/* Right Side - Text */}
           <div className="p-12 md:p-16 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              Hi! I'm Realtor,<br />OLA.
+              Hi! I'm Realtor,<br />Ola Otubu.
             </h2>
             <p className="text-lg leading-relaxed mb-6">
               As a homeowner, I remember how overwhelming the home-buying process felt...like tackling a lego puzzle without instructions.
@@ -263,7 +263,7 @@ export default function HomePage() {
 
               {/* Description */}
               <p className="text-gray-400 text-base leading-relaxed">
-                Set up a phone call to get to know each other. No obligations, no signatures. Free info for you.
+                Set up a text conversation to get to know each other. No obligations, no signatures. Free info for you.
               </p>
             </div>
 
@@ -347,15 +347,15 @@ export default function HomePage() {
 
           {/* CTA Button */}
           <div className="text-center">
-            <a href="tel:+16475295663" className="inline-block bg-green-500 text-white px-12 py-4 rounded font-bold hover:bg-green-600 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in">
-              CALL/TEXT: (647) 529-5663
+            <a href="sms:+16475295663" className="inline-block bg-green-500 text-white px-12 py-4 rounded font-bold hover:bg-green-600 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in">
+              TEXT: (647) 529-5663
             </a>
           </div>
         </div>
       </section>
 
       {/* Wanna Know More Details Section */}
-      <section
+      {/* <section
         ref={detailsAnim.ref as React.RefObject<HTMLElement>}
         className={`bg-black text-white py-16 px-4 transition-all duration-1000 ${detailsAnim.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
@@ -370,25 +370,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Phone Call Section - Full White Background */}
       <section className="bg-white text-black py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Side - Step */}
             <div className="animate-fade-in-scale">
               <div className="mb-4">
                 <span className="text-green-500 font-bold text-xs tracking-widest inline-block border-b-2 border-green-500 pb-1">STEP 1</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold mb-4 flex items-start gap-3">
                 <span className="text-green-500 text-4xl leading-none mt-1 animate-pulse">▶</span>
-                <span className="leading-tight">The Phone Call</span>
+                <span className="leading-tight">The Text Message</span>
               </h3>
               <p className="text-gray-600 text-base">
                 Think of this step as our "first date" — but without the awkward silences.
               </p>
             </div>
 
-            {/* Right Side - Benefits */}
             <div className="space-y-6">
               <div className="flex gap-3 items-start hover-lift transition-all duration-300 p-3 rounded-lg hover:bg-gray-50 animate-fade-in-scale" style={{ animationDelay: '0.1s' }}>
                 <span className="text-green-500 text-xl font-bold flex-shrink-0 mt-1">→</span>
@@ -414,26 +411,20 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="bg-gradient-to-br from-purple-600 to-blue-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-scale">
             Ready to Start Your Journey?
           </h2>
           <p className="text-xl mb-8 text-blue-100 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Call or text me directly - no forms, no waiting, just real conversation
+            Text me directly - no forms, no waiting, just real conversation
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-bounce-in" style={{ animationDelay: '0.4s' }}>
             <a
-              href="tel:+16475295663"
-              className="group inline-flex items-center px-10 py-5 bg-white text-purple-600 font-bold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-110 text-xl"
-            >
-              📞 Call: (647) 529-5663
-            </a>
-            <a
               href="sms:+16475295663"
-              className="group inline-flex items-center px-10 py-5 bg-yellow-400 text-black font-bold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-110 text-xl"
+              className="group inline-flex items-center px-10 py-5 bg-white text-purple-600 font-bold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-110 text-xl"
             >
               💬 Text: (647) 529-5663
             </a>
@@ -455,7 +446,7 @@ export default function HomePage() {
           <div className="bg-white border-4 border-purple-600 rounded-2xl p-12 text-center">
             <p className="text-purple-600 font-semibold mb-4 text-sm tracking-wider">READY TO TAKE THE NEXT STEP?</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Chat with OLA - No Pressure,<br />No BS, Real Advice
+              Chat with Ola Otubu - No Pressure,<br />No BS, Real Advice
             </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Whether you're buying a home or selling your property for top dollar, the journey starts with a conversation.
@@ -471,33 +462,6 @@ export default function HomePage() {
         </div>
       </section>
       {/* Newsletter Section */}
-      {/* Contact Section - Call/Text CTA */}
-      <section className="bg-black text-white py-16 px-4 relative overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20 animate-gradient"></div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <p className="text-lg mb-6 animate-fade-in-scale">
-            Join 5,000+ home-owners and home-buyers getting interest rate updates through 1 text a week
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <input
-              type="text"
-              placeholder="Enter Full Name..."
-              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
-            />
-            <input
-              type="tel"
-              placeholder="Enter Mobile Number..."
-              className="flex-1 px-4 py-3 rounded bg-transparent border border-gray-600 text-white placeholder-gray-500 hover:border-purple-500 focus:border-purple-500 focus:outline-none transition-all duration-300"
-            />
-          </div>
-          <a href="tel:+16475295663" className="mt-6 bg-yellow-400 text-black px-12 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in inline-block" style={{ animationDelay: '0.4s' }}>
-            KEEP ME UPDATED
-          </a>
-        </div>
-      </section>
-
 
     </div>
   );
@@ -508,21 +472,21 @@ const featuredTestimonials = [
     name: "Vicky Zadian",
     location: "Los Angeles, CA",
     title: "Very Skilled Realtor",
-    text: "OLA sold my LA triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
+    text: "Ola Otubu sold my LA triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
     image: "/person/1.jpg"
   },
   {
     name: "Catherine Sananbria",
     location: "Rancho Cucamonga, CA",
-    title: "Stress Free with OLA",
-    text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Call him now!!",
+    title: "Stress Free with Ola Otubu",
+    text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Text him now!!",
     image: "/person/2.jpg"
   },
   {
     name: "Akshay Shinde",
     location: "Pasadena, CA",
     title: "A+ Service",
-    text: "OLA made buying our first home so easy! He was attentive, and always available for us. He's your guy",
+    text: "Ola Otubu made buying our first home so easy! He was attentive, and always available for us. He's your guy",
     image: "/person/3.jpg"
   }
 ];
@@ -532,19 +496,19 @@ const googleReviews = [
     name: "Marisol Rivera",
     initial: "MR",
     rating: 5,
-    text: "Shout out to our Home Buying DREAM TEAM Vanessa & OLA!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
+    text: "Shout out to our Home Buying DREAM TEAM Vanessa & Ola Otubu!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
   },
   {
     name: "jose malvaez",
     initial: "JM",
     rating: 5,
-    text: "OLA introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
+    text: "Ola Otubu introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
   },
   {
     name: "Nuria Marroquin",
     initial: "NM",
     rating: 5,
-    text: "OLA was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
+    text: "Ola Otubu was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
   },
   {
     name: "Tiffany Huazo",
@@ -556,41 +520,41 @@ const googleReviews = [
     name: "akshay shinde",
     initial: "AS",
     rating: 5,
-    text: "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
+    text: "Ola Otubu helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
   },
   {
     name: "Jessica Ruiz",
     initial: "JR",
     rating: 5,
-    text: "I can't express how thankful and grateful we are for OLA He always made himself available and was very patient with all our questions.He is someone ..."
+    text: "I can't express how thankful and grateful we are for Ola Otubu He always made himself available and was very patient with all our questions.He is someone ..."
   },
   {
     name: "K'kai Sanabria",
     initial: "KS",
     rating: 5,
-    text: "By far the best decision me and my fiancé made, was to chose OLA as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
+    text: "By far the best decision me and my fiancé made, was to chose Ola Otubu as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
   },
   {
     name: "Faith T",
     initial: "FT",
     rating: 5,
-    text: "OLA was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
+    text: "Ola Otubu was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
   }
 ];
 
 const properties = [
-  { city: "La Habra, CA", type: "Represented Seller & Buyer", image: "/media/66daa191766f98674f3052fa.png" },
-  { city: "Downey, CA", type: "Represented Seller & Buyer", image: "/media/66daa191766f98cff73052f9.png" },
-  { city: "Whittier, CA", type: "Represented Buyer", image: "/media/66daa191766f98f7783052fb.png" },
-  { city: "Anaheim, CA", type: "Represented Seller", image: "/media/66daa19184ef295ccae7f842.png" },
-  { city: "Buena Park, CA", type: "Represented Seller", image: "/media/66daa19184ef298582e7f841.png" },
-  { city: "Pico Rivera, CA", type: "Represented Buyer", image: "/media/66daa191ab806e1090360d78.png" },
-  { city: "Hemet, CA", type: "Represented Buyer", image: "/media/66daa191ab806e2d87360d7a.png" },
-  { city: "Ontario, CA", type: "Represented Buyer", image: "/media/66daa191ab806e4121360d79.png" },
-  { city: "Cucamonga, CA", type: "Represented Buyer", image: "/media/66daa191f10da417bee81df1.png" },
-  { city: "Anaheim, CA", type: "Represented Seller & Buyer", image: "/media/66daa191f10da4b4fce81df0.png" },
-  { city: "Moval, CA", type: "Represented Seller", image: "/media/675136d7a5d0e703c784e25b.jpg" },
-  { city: "Norwalk, CA", type: "Represented Buyer", image: "/media/67529fd8ed7e7798d799ecb4.jpg" }
+  { city: "Mississauga, ON", type: "Represented Seller & Buyer", image: "/media/66daa191766f98674f3052fa.png" },
+  { city: "Brampton, ON", type: "Represented Seller & Buyer", image: "/media/66daa191766f98cff73052f9.png" },
+  { city: "Toronto, ON", type: "Represented Buyer", image: "/media/66daa191766f98f7783052fb.png" },
+  { city: "Oakville, ON", type: "Represented Seller", image: "/media/66daa19184ef295ccae7f842.png" },
+  { city: "Burlington, ON", type: "Represented Seller", image: "/media/66daa19184ef298582e7f841.png" },
+  { city: "Hamilton, ON", type: "Represented Buyer", image: "/media/66daa191ab806e1090360d78.png" },
+  { city: "Markham, ON", type: "Represented Buyer", image: "/media/66daa191ab806e2d87360d7a.png" },
+  { city: "Vaughan, ON", type: "Represented Buyer", image: "/media/66daa191ab806e4121360d79.png" },
+  { city: "Richmond Hill, ON", type: "Represented Buyer", image: "/media/66daa191f10da417bee81df1.png" },
+  { city: "Scarborough, ON", type: "Represented Seller & Buyer", image: "/media/66daa191f10da4b4fce81df0.png" },
+  { city: "North York, ON", type: "Represented Seller", image: "/media/675136d7a5d0e703c784e25b.jpg" },
+  { city: "Etobicoke, ON", type: "Represented Buyer", image: "/media/67529fd8ed7e7798d799ecb4.jpg" }
 ];
 
 function GoogleReviewCard({ name, initial, rating, text, index }: { name: string; initial: string; rating: number; text: string; index?: number }) {
@@ -613,7 +577,7 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">
         {text}
       </p>
-      <a href="tel:+16475295663" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors duration-300">More</a>
+      <a href="sms:+16475295663" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors duration-300">More</a>
 
       {/* Reviewer Info */}
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
@@ -663,9 +627,9 @@ function TestimonialCard({ name, location, title, text, image, index }: { name: 
       style={{ transitionDelay: `${(index || 0) * 150}ms` }}
     >
       <div className="w-20 h-20 rounded-full bg-gray-300 mx-auto mb-4 hover-scale transition-all duration-300 group-hover:shadow-lg overflow-hidden relative">
-        <Image 
-          src={image} 
-          alt={name} 
+        <Image
+          src={image}
+          alt={name}
           fill
           className="object-cover"
         />

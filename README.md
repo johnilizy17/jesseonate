@@ -30,7 +30,7 @@ npm run dev
 ## Project Structure
 
 ```
-OLAonate-clone/
+Ola Otubuonate-clone/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx          # Home page

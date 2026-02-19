@@ -128,7 +128,7 @@ export default function ReviewsPage() {
 
           {/* Load More Button */}
           <div className="text-center">
-            <a href="tel:+16475295663" className="inline-block bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
+            <a href="sms:+16475295663" className="inline-block bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
               Load More
             </a>
           </div>
@@ -146,14 +146,14 @@ export default function ReviewsPage() {
           <div className="bg-white border-4 border-purple-600 rounded-2xl p-12 text-center">
             <p className="text-purple-600 font-semibold mb-4 text-sm tracking-wider">READY TO TAKE THE NEXT STEP?</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Chat with OLA - No Pressure,<br />No BS, Real Advice
+              Chat with Ola Otubu - No Pressure,<br />No BS, Real Advice
             </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Whether you're buying a home or selling your property for top dollar, the journey starts with a conversation. 
               Click below to answer easy questions, and let's start planning together.
             </p>
             <a 
-              href="tel:+16475295663" 
+              href="sms:+16475295663" 
               className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-bold hover:bg-yellow-500 transition"
             >
               GRAB A SPOT TO CHAT
@@ -176,13 +176,13 @@ const featuredTestimonials = [
     name: "Akshay Shinde",
     location: "Pasadena, CA",
     image: "AS",
-    text: "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend OLA and his team! A+ Service!!!"
+    text: "Ola Otubu helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend Ola Otubu and his team! A+ Service!!!"
   },
   {
     name: "Jessica Ruiz",
     location: "Whittier, CA",
     image: "JR",
-    text: "I can't express how thankful and grateful we are for OLA. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr OLA come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
+    text: "I can't express how thankful and grateful we are for Ola Otubu. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr Ola Otubu come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
   }
 ];
 
@@ -191,19 +191,19 @@ const googleReviews = [
     name: "Marisol Rivera",
     initial: "MR",
     rating: 5,
-    text: "Shout out to our Home Buying DREAM TEAM Vanessa & OLA!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
+    text: "Shout out to our Home Buying DREAM TEAM Vanessa & Ola Otubu!Seriously, if you ever considered home owning, hit up these two wonderful and AMAZING human be..."
   },
   {
     name: "jose malvaez",
     initial: "JM",
     rating: 5,
-    text: "OLA introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
+    text: "Ola Otubu introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
   },
   {
     name: "Nuria Marroquin",
     initial: "NM",
     rating: 5,
-    text: "OLA was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
+    text: "Ola Otubu was a great person and very helpful in this process! He was very patient and very opened hearted .If you ever looking for someone to help you i..."
   },
   {
     name: "Tiffany Huazo",
@@ -215,25 +215,25 @@ const googleReviews = [
     name: "akshay shinde",
     initial: "AS",
     rating: 5,
-    text: "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
+    text: "Ola Otubu helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any do..."
   },
   {
     name: "Jessica Ruiz",
     initial: "JR",
     rating: 5,
-    text: "I can't express how thankful and grateful we are for OLA He always made himself available and was very patient with all our questions.He is someone ..."
+    text: "I can't express how thankful and grateful we are for Ola Otubu He always made himself available and was very patient with all our questions.He is someone ..."
   },
   {
     name: "K'kai Sanabria",
     initial: "KS",
     rating: 5,
-    text: "By far the best decision me and my fiancé made, was to chose OLA as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
+    text: "By far the best decision me and my fiancé made, was to chose Ola Otubu as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
   },
   {
     name: "Faith T",
     initial: "FT",
     rating: 5,
-    text: "OLA was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
+    text: "Ola Otubu was amazing! He helped us find our dream home and made the entire process smooth and stress-free. Highly recommend!"
   }
 ];
 
@@ -278,7 +278,7 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
       </div>
       
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">{text}</p>
-      <a href="tel:+16475295663" className="text-blue-600 text-sm font-semibold">More</a>
+      <a href="sms:+16475295663" className="text-blue-600 text-sm font-semibold">More</a>
       
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
         <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-semibold text-sm">

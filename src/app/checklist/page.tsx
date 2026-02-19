@@ -69,9 +69,9 @@ export default function ChecklistPage() {
         <div className="mt-12 bg-blue-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Client Testimonial</h2>
           <p className="text-gray-700 italic mb-4">
-            "OLA helped us buying our first home in LA! He was patient and attentive with our needs and wants. 
+            "Ola Otubu helped us buying our first home in LA! He was patient and attentive with our needs and wants. 
             He always made himself available to clarify any doubts or concerns throughout the process. 
-            He made the entire process super easy and convenient. Definitely recommend OLA and his team!"
+            He made the entire process super easy and convenient. Definitely recommend Ola Otubu and his team!"
           </p>
           <p className="text-gray-600 font-semibold">- Happy Homeowner</p>
         </div>
