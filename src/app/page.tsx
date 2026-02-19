@@ -214,7 +214,7 @@ export default function HomePage() {
           </div>
 
           {/* Right Side - Text */}
-          <div className="p-12 md:p-16 flex flex-col justify-center">
+          <div className="p-4 md:p-16 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
               Hi! I'm Realtor,<br />Ola Otubu.
             </h2>
