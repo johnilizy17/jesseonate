@@ -168,21 +168,21 @@ export default function ReviewsPage() {
 const featuredTestimonials = [
   {
     name: "Catherine Sananbria",
-    location: "Rancho Cucamonga, CA",
+    location: "Mississauga, ON",
     image: "CS",
     text: "He made the process not only a breeze but enjoyable as well! Finding our first home was an amazing experience and we were always at ease any of our anxiety and answer any questions we had. He's patient and kind and everything you could hope to find in a great realtor. We definitely recommend him to anyone looking to embark on this new journey of home ownership."
   },
   {
     name: "Akshay Shinde",
-    location: "Pasadena, CA",
+    location: "Brampton, ON",
     image: "AS",
-    text: "Ola Otubu helped us buying our first home in LA! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend Ola Otubu and his team! A+ Service!!!"
+    text: "OLA helped us buying our first home in Toronto! He was patient and attentive with our needs and wants. He always made himself available to clarify any doubts or concerns throughout the process. He made the entire process super easy and convenient. Definitely recommend OLA and his team! A+ Service!!!"
   },
   {
     name: "Jessica Ruiz",
-    location: "Whittier, CA",
+    location: "Oakville, ON",
     image: "JR",
-    text: "I can't express how thankful and grateful we are for Ola Otubu. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr Ola Otubu come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
+    text: "I can't express how thankful and grateful we are for OLA. He always made himself available and was very patient with all our questions. He is someone who my family and I will never forget. My 3 year old still asks 'when can mr OLA come over to our new house'. From the bottom of my heart thank him for helping us thru this journey, we were truly in good hands."
   }
 ];
 

@@ -177,7 +177,7 @@ export default function HomePage() {
                 <p className="text-gray-300 text-sm mb-2">
                   On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
                 </p>
-                <p className="text-blue-400 text-sm">@Ola OtubuAllAccess</p>
+                <p className="text-blue-400 text-sm">@OlaOtubuAllAccess</p>
               </div>
 
               {/* Laurel Wreath Frame with Photo */}
@@ -470,23 +470,23 @@ export default function HomePage() {
 const featuredTestimonials = [
   {
     name: "Vicky Zadian",
-    location: "Los Angeles, CA",
+    location: "Toronto, ON",
     title: "Very Skilled Realtor",
-    text: "Ola Otubu sold my LA triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
+    text: "OLA sold my Toronto triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
     image: "/person/1.jpg"
   },
   {
     name: "Catherine Sananbria",
-    location: "Rancho Cucamonga, CA",
-    title: "Stress Free with Ola Otubu",
+    location: "Mississauga, ON",
+    title: "Stress Free with OLA",
     text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Text him now!!",
     image: "/person/2.jpg"
   },
   {
     name: "Akshay Shinde",
-    location: "Pasadena, CA",
+    location: "Brampton, ON",
     title: "A+ Service",
-    text: "Ola Otubu made buying our first home so easy! He was attentive, and always available for us. He's your guy",
+    text: "OLA made buying our first home so easy! He was attentive, and always available for us. He's your guy",
     image: "/person/3.jpg"
   }
 ];
