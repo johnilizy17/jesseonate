@@ -4,8 +4,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: " - Expert Realtor in California",
-  description: "Your trusted guide to buying and selling homes in California",
+  title: "OLA - Expert Realtor in Canada",
+  description: "Your trusted guide to buying and selling homes in Canada",
   icons: {
     icon: '/user.jpg',
     apple: '/user.jpg',

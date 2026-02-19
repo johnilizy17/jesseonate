@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="text-2xl font-bold" style={{color:"#fff"}}>
-            <span className="text-green-500">Ola</span> Otubu Real Estate.
+            <span className="text-green-500">Ola</span> OTUBU REAL ESTATE.
           </Link> 
 
           {/* Desktop CTA Button */}

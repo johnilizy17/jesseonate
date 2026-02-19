@@ -63,7 +63,7 @@ export default function HomePage() {
               Whether it's your first time moving or a seasoned seller, I can help you <span className="font-semibold">start</span>
             </p>
             <a href="sms:+16475295663" className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-semibold hover:bg-yellow-500 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in" style={{ animationDelay: '0.4s' }}>
-              TEXT: (647) 529-5663
+              SMS “READY” to (647) 529-5663
             </a>
             <div className="flex items-center gap-4 mt-8 animate-fade-in-scale" style={{ animationDelay: '0.6s' }}>
               <div className="flex -space-x-2">
@@ -154,32 +154,31 @@ export default function HomePage() {
             {/* Main content */}
             <div className="relative z-10 flex flex-col items-center">
               {/* Instagram Card */}
-              <div className="bg-black rounded-2xl p-4 mb-8 w-80">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
-                    <Image
-                      src="/user.jpg"
-                      alt="Ola Otubu"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-bold text-white">Ola Otubu</p>
-                    <div className="flex gap-4 text-xs text-gray-400">
-                      <span><strong className="text-white">421</strong> posts</span>
-                      <span><strong className="text-white">15.4K</strong> followers</span>
-                      <span><strong className="text-white">1,448</strong> following</span>
+              <a href="https://www.instagram.com/olaotuburealestate" target="_blank" rel="noopener noreferrer" className="bg-black rounded-2xl p-4 mb-8 w-80">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
+                      <Image
+                        src="/user.jpg"
+                        alt="Ola Otubu"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-bold text-white">Ola Otubu</p>
+                      <div className="flex gap-4 text-xs text-gray-400">
+                        <span><strong className="text-white">421</strong> posts</span>
+                        <span><strong className="text-white">10K</strong> followers</span>
+                        <span><strong className="text-white">1,448</strong> following</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <p className="text-white font-bold mb-1">Ola Otubu</p>
-                <p className="text-gray-300 text-sm mb-2">
-                  On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
-                </p>
-                <p className="text-blue-400 text-sm">@OlaOtubuAllAccess</p>
-              </div>
-
+                  <p className="text-white font-bold mb-1">Ola OTUBU</p>
+                  <p className="text-gray-300 text-sm mb-2">
+                    On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
+                  </p>
+                  <p className="text-blue-400 text-sm">@olaotuburealestate</p>
+              </a>
               {/* Laurel Wreath Frame with Photo */}
               <div className="relative">
                 {/* Laurel Wreath SVG or Image placeholder */}
@@ -348,7 +347,7 @@ export default function HomePage() {
           {/* CTA Button */}
           <div className="text-center">
             <a href="sms:+16475295663" className="inline-block bg-green-500 text-white px-12 py-4 rounded font-bold hover:bg-green-600 transition-all duration-300 hover-lift hover:scale-110 animate-bounce-in">
-              TEXT: (647) 529-5663
+              SMS “READY” to (647) 529-5663
             </a>
           </div>
         </div>
@@ -426,7 +425,7 @@ export default function HomePage() {
               href="sms:+16475295663"
               className="group inline-flex items-center px-10 py-5 bg-white text-purple-600 font-bold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-110 text-xl"
             >
-              💬 Text: (647) 529-5663
+              💬 SMS “READY” to (647) 529-5663
             </a>
           </div>
 
@@ -472,21 +471,21 @@ const featuredTestimonials = [
     name: "Vicky Zadian",
     location: "Toronto, ON",
     title: "Very Skilled Realtor",
-    text: "OLA sold my Toronto triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
+    text: "Ola OTUBU sold my Toronto triplex quickly! His expertise stood out as soon as we met. Highly recommend using him!",
     image: "/person/1.jpg"
   },
   {
     name: "Catherine Sananbria",
     location: "Mississauga, ON",
-    title: "Stress Free with OLA",
-    text: "OLA made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Text him now!!",
+    title: "Stress Free with Ola OTUBU",
+    text: "Ola OTUBU made finding a home easy and stress-free. He's sharp, kind, and an amazing realtor. Text him now!!",
     image: "/person/2.jpg"
   },
   {
     name: "Akshay Shinde",
     location: "Brampton, ON",
     title: "A+ Service",
-    text: "OLA made buying our first home so easy! He was attentive, and always available for us. He's your guy",
+    text: "Ola OTUBU made buying our first home so easy! He was attentive, and always available for us. He's your guy",
     image: "/person/3.jpg"
   }
 ];
@@ -502,7 +501,7 @@ const googleReviews = [
     name: "jose malvaez",
     initial: "JM",
     rating: 5,
-    text: "Ola Otubu introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredib..."
+    text: "Ola Otubu introduced my wife and I to his team! Him and his team helped us with this amazing process of buying our first property! It is truly an incredible..."
   },
   {
     name: "Nuria Marroquin",
@@ -532,7 +531,7 @@ const googleReviews = [
     name: "K'kai Sanabria",
     initial: "KS",
     rating: 5,
-    text: "By far the best decision me and my fiancé made, was to chose Ola Otubu as our realtor.He made the process not only a breeze but enjoyable as well. Finding..."
+    text: "By far the best decision me and my fiancé made, was to chose Ola Otubu as our realtor. He made the process not only a breeze but enjoyable as well. Finding..."
   },
   {
     name: "Faith T",
@@ -577,7 +576,6 @@ function GoogleReviewCard({ name, initial, rating, text, index }: { name: string
       <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">
         {text}
       </p>
-      <a href="sms:+16475295663" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors duration-300">More</a>
 
       {/* Reviewer Info */}
       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-gray-200">
