@@ -34,22 +34,6 @@ export default function Footer() {
 
           {/* Contact & Stats Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Contact Info */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-              <h4 className="text-xl font-bold text-white mb-6 text-center">Get In Touch</h4>
-              <a
-                href="sms:+16475295663"
-                className="flex items-center justify-center gap-4 text-gray-300 hover:text-cyan-400 transition-colors duration-300 group"
-              >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <span className="text-3xl">💬</span>
-                </div>
-                <div className="text-left">
-                  <p className="text-sm text-gray-400">Text Me Anytime</p>
-                  <p className="text-2xl font-bold">(647) 529-5663</p>
-                </div>
-              </a>
-            </div>
 
             {/* Quick Stats */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-cyan-500/50 transition-all duration-300">
