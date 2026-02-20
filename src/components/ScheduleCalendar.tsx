@@ -44,9 +44,9 @@ export default function ScheduleCalendar({
   });
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const monthNames = ["January", "February", "March", "April", "May", "June", 
-                      "July", "August", "September", "October", "November", "December"];
-  
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+
   // Generate calendar days for current month
   const getDaysInMonth = (month: number, year: number) => {
     return new Date(year, month + 1, 0).getDate();
@@ -89,23 +89,23 @@ export default function ScheduleCalendar({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!selectedDate || !selectedTime) return;
-    
+
     // Format the date and time for Google Calendar
     const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(selectedDate).padStart(2, '0')}`;
     const timeStr = selectedTime;
-    
+
     // Convert to 24-hour format for Google Calendar
     const [time, period] = timeStr.split(' ');
     const [hours, minutes] = time.split(':');
     let hour24 = parseInt(hours);
     if (period === 'PM' && hour24 !== 12) hour24 += 12;
     if (period === 'AM' && hour24 === 12) hour24 = 0;
-    
+
     const startDateTime = `${dateStr}T${String(hour24).padStart(2, '0')}:${minutes}:00`;
     const endDateTime = `${dateStr}T${String(hour24 + 1).padStart(2, '0')}:${minutes}:00`;
-    
+
     // Create booking data
     const bookingData: BookingData = {
       date: dateStr,
@@ -119,17 +119,17 @@ export default function ScheduleCalendar({
     if (onBookingComplete) {
       onBookingComplete(bookingData);
     }
-    
+
     // Create Google Calendar event URL
     const title = encodeURIComponent(eventTitle);
     const details = encodeURIComponent(`Phone consultation with ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}`);
     const location = encodeURIComponent(eventLocation);
-    
+
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDateTime.replace(/[-:]/g, '')}/${endDateTime.replace(/[-:]/g, '')}&details=${details}&location=${location}`;
-    
+
     // Open Google Calendar in new tab
     window.open(googleCalendarUrl, '_blank');
-    
+
     // Reset form
     alert('Opening Google Calendar to confirm your appointment!');
   };
@@ -137,7 +137,7 @@ export default function ScheduleCalendar({
   if (showForm) {
     return (
       <div className="bg-white rounded-lg shadow-xl p-8">
-        <button 
+        <button
           onClick={() => setShowForm(false)}
           className="mb-6 text-gray-600 hover:text-gray-900 flex items-center gap-2"
         >
@@ -146,9 +146,9 @@ export default function ScheduleCalendar({
           </svg>
           Back
         </button>
-        
+
         <h2 className="text-2xl font-bold mb-6">Complete Your Booking</h2>
-        
+
         <div className="mb-6 p-4 bg-gray-50 rounded-lg">
           <p className="text-sm text-gray-600">Selected Time:</p>
           <p className="font-bold text-lg">
@@ -163,7 +163,7 @@ export default function ScheduleCalendar({
               type="text"
               required
               value={formData.name}
-              onChange={(e) => setFormData({...formData, name: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="Enter your full name"
             />
@@ -175,7 +175,7 @@ export default function ScheduleCalendar({
               type="email"
               required
               value={formData.email}
-              onChange={(e) => setFormData({...formData, email: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="your.email@example.com"
             />
@@ -184,10 +184,10 @@ export default function ScheduleCalendar({
           <div>
             <label className="block text-sm font-semibold mb-2">Phone Number *</label>
             <input
-              type="tel"
+              type="sms"
               required
               value={formData.phone}
-              onChange={(e) => setFormData({...formData, phone: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder="(555) 123-4567"
             />
@@ -212,7 +212,7 @@ export default function ScheduleCalendar({
           <div className="mb-6">
             <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-4">
               <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
               </svg>
             </div>
             <h1 className="text-2xl font-bold mb-2">{title}</h1>
@@ -287,11 +287,11 @@ export default function ScheduleCalendar({
                     onClick={() => isAvailable && setSelectedDate(day)}
                     className={`
                       py-2 text-sm rounded-lg transition
-                      ${selectedDate === day 
-                        ? 'bg-black text-white font-bold' 
+                      ${selectedDate === day
+                        ? 'bg-black text-white font-bold'
                         : isAvailable
-                        ? 'hover:bg-gray-100 text-gray-900'
-                        : 'text-gray-300 cursor-not-allowed'
+                          ? 'hover:bg-gray-100 text-gray-900'
+                          : 'text-gray-300 cursor-not-allowed'
                       }
                     `}
                     disabled={!isAvailable}
@@ -325,7 +325,7 @@ export default function ScheduleCalendar({
           )}
 
           {/* Select Button */}
-          <button 
+          <button
             onClick={handleSelectTime}
             className="w-full mt-6 bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition disabled:bg-gray-300 disabled:cursor-not-allowed"
             disabled={!selectedDate || !selectedTime}

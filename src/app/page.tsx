@@ -155,29 +155,29 @@ export default function HomePage() {
             <div className="relative z-10 flex flex-col items-center">
               {/* Instagram Card */}
               <a href="https://www.instagram.com/olaotuburealestate" target="_blank" rel="noopener noreferrer" className="bg-black rounded-2xl p-4 mb-8 w-80">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
-                      <Image
-                        src="/user.jpg"
-                        alt="Ola Otubu"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-bold text-white">Ola Otubu</p>
-                      <div className="flex gap-4 text-xs text-gray-400">
-                        <span><strong className="text-white">421</strong> posts</span>
-                        <span><strong className="text-white">10K</strong> followers</span>
-                        <span><strong className="text-white">1,448</strong> following</span>
-                      </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-full bg-gray-600 overflow-hidden relative hover-scale transition-all duration-300">
+                    <Image
+                      src="/user.jpg"
+                      alt="Ola Otubu"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-bold text-white">Ola Otubu</p>
+                    <div className="flex gap-4 text-xs text-gray-400">
+                      <span><strong className="text-white">421</strong> posts</span>
+                      <span><strong className="text-white">10K</strong> followers</span>
+                      <span><strong className="text-white">1,448</strong> following</span>
                     </div>
                   </div>
-                  <p className="text-white font-bold mb-1">Ola OTUBU</p>
-                  <p className="text-gray-300 text-sm mb-2">
-                    On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
-                  </p>
-                  <p className="text-blue-400 text-sm">@olaotuburealestate</p>
+                </div>
+                <p className="text-white font-bold mb-1">Ola OTUBU</p>
+                <p className="text-gray-300 text-sm mb-2">
+                  On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
+                </p>
+                <p className="text-blue-400 text-sm">@olaotuburealestate</p>
               </a>
               {/* Laurel Wreath Frame with Photo */}
               <div className="relative">
@@ -215,7 +215,7 @@ export default function HomePage() {
           {/* Right Side - Text */}
           <div className="p-4 md:p-16 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              Hi! I'm Realtor,<br />Ola Otubu.
+              Hi! I'm Realtor,<br />Ola OTUBU.
             </h2>
             <p className="text-lg leading-relaxed mb-6">
               As a homeowner, I remember how overwhelming the home-buying process felt...like tackling a lego puzzle without instructions.
@@ -452,7 +452,7 @@ export default function HomePage() {
               Click below to answer easy questions, and let's start planning together.
             </p>
             <a
-              href="tel:+16475295663"
+              href="sms:+16475295663"
               className="inline-block bg-yellow-400 text-black px-8 py-3 rounded font-bold hover:bg-yellow-500 transition"
             >
               GRAB A SPOT TO CHAT
