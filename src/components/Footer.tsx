@@ -71,7 +71,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <p className="text-gray-400 text-sm">
-              © 2026 Ola Otubu Real Estate. All Rights Reserved.
+              © 2026 Ola OTUBU Real Estate. All Rights Reserved.
             </p>
           </div>
         </div>
