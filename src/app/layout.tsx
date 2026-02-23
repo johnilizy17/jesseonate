@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "OLA - Expert Realtor in Canada",
+  title: "OLA - Expert realtor in The Greater Toronto Area",
   description: "Your trusted guide to buying and selling homes in Canada",
   icons: {
     icon: '/user.jpg',
