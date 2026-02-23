@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           {/* Contact & Stats Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-1 gap-8 mb-12">
 
             {/* Quick Stats */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-cyan-500/50 transition-all duration-300">

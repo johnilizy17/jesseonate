@@ -206,7 +206,7 @@ export default function HomePage() {
 
                 {/* Banner */}
                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-400 px-12 py-3 text-center" style={{ clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)' }}>
-                  <p className="font-bold text-2xl text-gray-800 tracking-wider">Ola Otubu</p>
+                  <p className="font-bold text-2xl text-gray-800 tracking-wider">Ola OTUBU</p>
                 </div>
               </div>
             </div>
