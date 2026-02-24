@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </div>
             <h3 className="text-5xl font-black text-white mb-2">OLA</h3>
-            <p className="text-cyan-400 font-semibold text-xl mb-6">Expert Realtor in California</p>
+            <p className="text-cyan-400 font-semibold text-xl mb-6">Ola OTUBU  Expert Realtor in the Greater Toronto Area</p>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
               On a mission to inspire and help people move, invest, and elevate their lifestyle through Real Estate 🏡
             </p>

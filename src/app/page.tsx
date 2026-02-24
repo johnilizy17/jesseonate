@@ -102,7 +102,7 @@ export default function HomePage() {
                 <div className="animate-shimmer absolute inset-0"></div>
               </div>
               <Image
-                src="/user.jpg"
+                src="/user1.jpg"
                 alt="Ola Otubu - Real Estate Expert"
                 fill
                 className="object-cover"
